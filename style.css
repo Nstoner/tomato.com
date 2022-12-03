@@ -290,7 +290,7 @@ footer .credit span {
 
 /* Shop Start */
 .shop {
-    min-width: 100vh;
+    min-width: 100vw;
     background-image: url(image/heading-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -394,6 +394,44 @@ footer .credit span {
 }
 
 @media (max-width:768px) {
+
+
+    .tabMenuContainer {
+        position: fixed;
+        bottom: 0;
+    }
+
+    .tabMenuContainer .slider-tab {
+        height: 5px;
+        background-color: #C62B27;
+    }    
+    .tabs {
+        min-width: 100vw;
+        display: flex;
+        justify-content: flex-start;
+        background-color: var(--red);
+        text-align: center;
+    }
+
+    .tabs li {
+        color: #fff;
+        font-size: 12px;
+        background-color: var(--redorange);
+        width: 20%;
+        padding: 10px;
+        user-select: none;
+    }
+
+    .tabs li:hover {
+        background-color: var(--red);
+        outline: 1px solid var(--red);
+        font-weight: 600;
+    }
+
+    .tabs li.active {
+        background-color: var(--redorange);
+    }
+
     
 }
 
